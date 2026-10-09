@@ -1,228 +1,433 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alan Carlos Silvestre</title>
-    <link rel="shortcut icon" href="/imagenes/letra-a-dentro-de-un-circulo.svg" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Alan Carlos Silvestre: experiencia en DevSecOps y soluciones tecnológicas. Desarrollo web, aplicaciones móviles, sistemas a medida y consultoría para equipos y negocios.">
+    <meta name="theme-color" content="#0b1020">
+    <title>Alan Carlos Silvestre | DevSecOps y soluciones tecnológicas</title>
+    <link rel="icon" href="./imagenes/letra-a-dentro-de-un-circulo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
-    <header class="header"> 
-        <div class="wrapper">
-            <div class="header-content">
-                <h1 class="logo"> Alan Carlos</h1>
-                <nav class="menu" aria-label="main-navigation">
-                    <ul>
-                        <li> <a class="is-active" href="#main">Hola</a></li><!--
-                        --><li><a class="hero-nav" href="#project">Proyectos</a></li><!--
-                        --> <li><a class="hero-nav" href="#form">Hablemos</a></li>
-                    </ul>
-                </nav>
-            
-              <a href="curriculum/CV_ Alan_Miguel_Carlos_Silvestre.pdf" download="curriculum Alan Carlos Silvestre" target="_blank"><button  class="button-hero" >Descargar Curriculum</button>  </a>  
-    
-            </div>
-              
+    <div class="ambient-background" aria-hidden="true">
+        <span class="ambient-orb ambient-orb--violet"></span>
+        <span class="ambient-orb ambient-orb--cyan"></span>
+        <span class="ambient-orb ambient-orb--blue"></span>
+        <span class="ambient-ring"></span>
+    </div>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="site-header wrapper">
+        <div class="header-content glass">
+            <a class="logo" href="#main" aria-label="Alan Carlos, inicio">
+                <span class="logo-mark" aria-hidden="true">AC<span>.</span></span>
+                <span>Alan Carlos</span>
+            </a>
+            <nav class="menu" aria-label="Navegación principal">
+                <a href="#perfil">Perfil</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#soluciones">Soluciones</a>
+                <a href="#form">Contacto</a>
+            </nav>
+            <a class="button button--small button--secondary" href="./curriculum/CV_ Alan_Miguel_Carlos_Silvestre.pdf" download="Curriculum Alan Carlos Silvestre.pdf">
+                Descargar CV <span aria-hidden="true">↗</span>
+            </a>
         </div>
     </header>
-    <div class="wrapper">
-       
-            <section aria-label="main" class="hero" id="main">
-            <div class="hero-image">
-                <img src="imagenes/1.png" width="300" height="330" alt="">
-        </div>
-        <div class="hero-description">
-           
-                <h2>¡Hola a todos!</h2>
-                <h1>soy Alan</h1>
-          
-            <p>
-              Un desarrollador de software apasionado por las nuevas tecnologías que revolucionan el mundo y amante de la música.
-            </p>
-            <div class="social">
-                <a class="button-icon" href="tel:+51983260"><img width="35px" src="./icons/icon-phone.svg" alt=""></a>
-                <a class="button-icon" href="#form" ><img width="35px" src="./icons/icon-important_mail.svg" alt=""></a>
-                <a class="button-icon" href="https://www.instagram.com/alan.carlos.silvestre/" target="_blank"><img width="35px" src="./icons/icon-instagram.svg" alt=""></a>
-                <a class="button-icon" href="https://github.com/alancarlossilvestre" target="_blank" ><img  width= "35px" src="./icons/icon-github.svg" alt=""></a>
-            </div>
-            <a href="curriculum/CV_ Alan_Miguel_Carlos_Silvestre.pdf" target="_blank" class="button">Ver Curriculum</a>
-             </section>
-       
-        
-        <section class="mensaje" >
-            <p class="mensaje-personal">A lo largo de mi carrera como desarrollador, he tenido 
-                el privilegio de trabajar en proyectos retadores e increíbles</p>
-            <p class="muestra">Aquí hay algunos que me gustaría compartir</p>
-   
-             <a class="f-a" href="#contenedor-testimoniales"><img src="./icons/arrow-down.svg" alt="Icono-flecha-hacia-abajo"></a>
 
+    <main class="wrapper" id="main" tabindex="-1">
+        <section class="hero hero--professional" aria-labelledby="hero-title">
+            <div class="hero-description">
+                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> DevSecOps Engineer</p>
+                <h1 id="hero-title">Alan Carlos <span class="gradient-text">Silvestre.</span></h1>
+                <p class="hero-intro">DevSecOps Engineer y desarrollador. Creo soluciones web, aplicaciones móviles y sistemas a medida, combinando desarrollo, automatización y cloud.</p>
+                <div class="button-group">
+                    <a class="button" href="#experiencia">Mi experiencia <span aria-hidden="true">↗</span></a>
+                    <a class="button button--secondary" href="#soluciones">Ver soluciones <span aria-hidden="true">↗</span></a>
+                </div>
+                <a class="text-link hero-cv-link" href="./curriculum/CV_ Alan_Miguel_Carlos_Silvestre.pdf" target="_blank" rel="noopener noreferrer">Ver currículum completo <span aria-hidden="true">↗</span></a>
+                <div class="hero-social">
+                    <span>Conectemos</span>
+                    <div class="social" aria-label="Contacto profesional">
+                        <a class="button-icon" href="https://www.linkedin.com/in/alan-miguel-carlos-silvestre-6936651bb/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Alan (abre en otra pestaña)">
+                            <span class="linkedin-mark" aria-hidden="true">in</span>
+                        </a>
+                        <a class="button-icon" href="https://github.com/alancarlossilvestre" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Alan (abre en otra pestaña)">
+                            <img src="./icons/icon-github.svg" width="22" height="22" alt="">
+                        </a>
+                        <a class="button-icon" href="#form" aria-label="Ir al formulario de contacto">
+                            <img src="./icons/icon-important_mail.svg" width="22" height="22" alt="">
+                        </a>
+                        <a class="button-icon" href="tel:+51983260408" aria-label="Llamar a Alan">
+                            <img src="./icons/icon-phone.svg" width="22" height="22" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <figure class="hero-visual glass">
+                <div class="visual-header">
+                    <span class="window-controls" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span>Tecnología con propósito.</span>
+                    <span class="visual-code-mark" aria-hidden="true">&lt;/&gt;</span>
+                    <button class="orbit-toggle" type="button" aria-pressed="false" aria-label="Pausar animación orbital" title="Pausar animación orbital" hidden>
+                        <svg class="orbit-pause-icon" width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 3h3v10H4zm5 0h3v10H9z"></path></svg>
+                        <svg class="orbit-play-icon" width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M5 2.5 13 8l-8 5.5z"></path></svg>
+                    </button>
+                </div>
+                <div class="creative-scene" aria-hidden="true">
+                    <div class="creative-orbit creative-orbit--outer"></div>
+                    <div class="creative-orbit creative-orbit--inner"></div>
+                    <div class="creative-orbit creative-orbit--path"></div>
+                    <div class="creative-core">AC<span>.</span></div>
+                    <span class="floating-label floating-label--devops"><span>&lt;/&gt;</span> DevOps</span>
+                    <span class="floating-label floating-label--cloud"><span>{ }</span> Cloud</span>
+                    <span class="floating-label floating-label--security"><span>+</span> Seguridad</span>
+                    <span class="scene-spark scene-spark--one"></span>
+                    <span class="scene-spark scene-spark--two"></span>
+                </div>
+                <div class="visual-code">
+                    <p><span class="code-keyword">const</span> perfil = {</p>
+                    <p class="code-line">valor: <span class="code-string">"soluciones"</span>,</p>
+                    <p class="code-line">foco: <span class="code-string">"automatización"</span></p>
+                    <p>};</p>
+                </div>
+                <figcaption class="visual-caption glass">
+                    <span class="caption-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <div><strong>Alan Carlos Silvestre</strong><span>DevSecOps Engineer</span></div>
+                    <span class="caption-dot" aria-hidden="true"></span>
+                </figcaption>
+            </figure>
         </section>
-        
-        <section class="contenedor-testimoniales" id="contenedor-testimoniales">
-                <img width="65px" height="65px"  src="./imagenes/foco.svg" alt="icono-de-leonidas">
-                <p class="text-testimonial">"Alan ha sido de gran ayuda para acelerar ciertos esfuerzos de
-                     desarrollo. Lo que nos hubiera llevado 6 meses solo les
-                      llevó 1,5 meses ".</p>
-                <p class="nombre-testimonial">LEONIDAS ESTEBAN / COFUNDADOR Y CEO
-                     LEONIDASESTEBAN.COM</p>
+
+        <section class="content-section" id="perfil" aria-labelledby="profile-title">
+            <div class="section-heading">
+                <p class="eyebrow">Sobre mí</p>
+                <h2 id="profile-title">Un perfil técnico, una mirada <span class="gradient-text">integral.</span></h2>
+                <p>Soy bachiller en Ingeniería de Sistemas y Computación por la Universidad Nacional Daniel Alcides Carrión. Mi trayectoria combina desarrollo de software, automatización, cloud y prácticas de seguridad en el ciclo de entrega de aplicaciones.</p>
+            </div>
+            <div class="profile-grid">
+                <article class="profile-card glass">
+                    <p class="eyebrow">Mi especialidad</p>
+                    <h3>DevSecOps y automatización</h3>
+                    <p>Experiencia en pipelines, despliegues a certificación y producción, y automatización de procesos en los sectores financiero y de telecomunicaciones.</p>
+                </article>
+                <article class="profile-card glass">
+                    <p class="eyebrow">Mi enfoque</p>
+                    <h3>Entender antes de implementar</h3>
+                    <p>Una mirada analítica para comprender las necesidades, conectar tecnología con procesos y proponer soluciones útiles para cada contexto.</p>
+                </article>
+                <article class="profile-card glass">
+                    <p class="eyebrow">Cómo trabajo</p>
+                    <h3>Colaboración y mejora continua</h3>
+                    <p>Prácticas DevOps, control de versiones y metodologías ágiles. Me interesa seguir aprendiendo sobre ciberseguridad y transformación digital.</p>
+                </article>
+            </div>
+            <div class="skills-panel glass">
+                <div class="panel-heading">
+                    <p class="eyebrow">Herramientas de mi experiencia</p>
+                    <h3>Mi entorno de trabajo</h3>
+                </div>
+                <div class="skills-grid">
+                    <div>
+                        <h4>DevOps y automatización</h4>
+                        <ul class="tags" aria-label="Herramientas de DevOps y automatización">
+                            <li>Azure DevOps</li><li>Docker</li><li>Jenkins</li><li>Ansible</li><li>Linux</li><li>Shell</li><li>Git</li><li>Bitbucket</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Cloud y plataformas</h4>
+                        <ul class="tags" aria-label="Plataformas cloud">
+                            <li>Azure</li><li>Huawei Cloud</li><li>Kubernetes</li><li>Apigee GCP</li><li>SonarCloud</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Desarrollo y colaboración</h4>
+                        <ul class="tags" aria-label="Desarrollo de software y colaboración">
+                            <li>Java</li><li>Python</li><li>SQL / PL-SQL</li><li>Android Studio</li><li>Scrum</li><li>Jira</li><li>Confluence</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <div class="project" id="project">
-            <div class="project-image">
-                <img src="imagenes/ICEsystem.png" alt="">
+        <section class="content-section" id="experiencia" aria-labelledby="experience-title">
+            <div class="section-heading">
+                <p class="eyebrow">Trayectoria profesional</p>
+                <h2 id="experience-title">Experiencia que respalda mi <span class="gradient-text">trabajo.</span></h2>
+                <p>De la automatización de operaciones al despliegue de aplicaciones: una trayectoria construida en equipos financieros, de telecomunicaciones y de tecnología.</p>
             </div>
-            <div class="project-description">
-                <a class="title" href="#">ICE SYSTEM</a>
-                <p>Es un sistema web para mi iglesia la cual se encuentra en
-                    desarrollo, éste sistema ayudará a administrar los datos de los más de 400 personas
-                    de la iglesia Centro Evangelístico</p>
-                     <button target="_blank" href="#" class="button is-secondary">Ver Código</button>
-                     <button target="_blank" href="#" class="button">Ver Proyecto</button>
+            <ol class="experience-list">
+                <li>
+                    <article class="experience-card glass" aria-labelledby="oh-title">
+                        <div class="experience-meta">
+                            <p class="eyebrow">Financiera Oh!</p>
+                            <p class="experience-date"><time datetime="2024-06">Junio 2024</time> — Actualidad</p>
+                            <span class="role-status">Puesto actual</span>
+                        </div>
+                        <div class="experience-description">
+                            <h3 id="oh-title">DevSecOps Engineer</h3>
+                            <p>Creación de pipelines automatizados para desplegar aplicaciones Android, web y otros sistemas a los entornos de certificación y producción, integrando prácticas de desarrollo y seguridad.</p>
+                            <ul class="tags" aria-label="Tecnologías en Financiera Oh!">
+                                <li>Azure DevOps</li><li>Docker</li><li>Java</li><li>Linux</li><li>Apigee GCP</li><li>SonarCloud</li><li>Git</li><li>Bitbucket</li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="experience-card glass" aria-labelledby="bcp-title">
+                        <div class="experience-meta">
+                            <p class="eyebrow">BCP</p>
+                            <p class="experience-date"><time datetime="2023-01">Enero 2023</time> — <time datetime="2024-07">Julio 2024</time></p>
+                        </div>
+                        <div class="experience-description">
+                            <h3 id="bcp-title">AgileOps</h3>
+                            <p>Ejecución de pases a certificación y producción, e implementación de prácticas DevOps y metodologías ágiles para mejorar la eficiencia y la calidad del desarrollo y despliegue de software.</p>
+                            <ul class="tags" aria-label="Tecnologías en BCP">
+                                <li>Kubernetes</li><li>Azure</li><li>Docker</li><li>Jenkins</li><li>Java</li><li>Shell</li><li>Jira</li><li>Confluence</li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="experience-card glass" aria-labelledby="entel-title">
+                        <div class="experience-meta">
+                            <p class="eyebrow">Entel Perú</p>
+                            <p class="experience-date"><time datetime="2021-12">Diciembre 2021</time> — <time datetime="2022-12">Diciembre 2022</time></p>
+                        </div>
+                        <div class="experience-description">
+                            <h3 id="entel-title">Practicante preprofesional de Cloud &amp; Automation</h3>
+                            <p>Revisión, realización y seguimiento de proyectos de automatización de procesos para el correcto desempeño de los equipos de red a nivel nacional.</p>
+                            <ul class="tags" aria-label="Tecnologías en Entel Perú">
+                                <li>Python</li><li>Ansible</li><li>Linux</li><li>Huawei Cloud</li><li>Git</li><li>DevOps</li><li>Scrum</li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="experience-card glass" aria-labelledby="gorepa-title">
+                        <div class="experience-meta">
+                            <p class="eyebrow">GOREPA Pasco</p>
+                            <p class="experience-date"><time datetime="2021-05">Mayo 2021</time> — <time datetime="2021-12">Diciembre 2021</time></p>
+                        </div>
+                        <div class="experience-description">
+                            <h3 id="gorepa-title">Ejecutor de proyecto</h3>
+                            <p>Participación en un proyecto de proyección social para fortalecer las tecnologías de información, el mantenimiento y el soporte en las oficinas del Gobierno Regional de Pasco.</p>
+                            <ul class="tags" aria-label="Áreas de trabajo en GOREPA">
+                                <li>Tecnologías de información</li><li>Mantenimiento</li><li>Soporte</li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+            </ol>
+            <div class="background-card glass">
+                <div class="panel-heading">
+                    <p class="eyebrow">Mis primeros proyectos</p>
+                    <h3>Desarrollo móvil e impacto social</h3>
+                </div>
+                <div class="background-grid">
+                    <article>
+                        <p class="experience-date">Noviembre 2020 — Abril 2021</p>
+                        <h4>Diseño de Mezcla · Living Concrete</h4>
+                        <p>Desarrollo de una aplicación Android para calcular el diseño de mezcla en obras civiles mediante la metodología ACI. Java, Android Studio, Google Cloud y Gradle.</p>
+                    </article>
+                    <article>
+                        <p class="experience-date">Noviembre 2020 — Febrero 2021</p>
+                        <h4>Essence · Desarrollo Android</h4>
+                        <p>Programación y diseño de interfaz móvil. El proyecto fue finalista del torneo internacional TuApp 2020.</p>
+                    </article>
+                    <article>
+                        <p class="experience-date">Febrero 2019 — Noviembre 2019</p>
+                        <h4>MeeToo · Desarrollo móvil</h4>
+                        <p>Programación de una aplicación móvil que fue finalista del torneo internacional TuApp 2019 en México.</p>
+                    </article>
+                </div>
             </div>
-        </div>
-    
-
-
-
-        <section class="contenedor-testimoniales">
-            <img width="65px" height="65px"  src="./imagenes/foco.svg" alt="icono-de-leonidas">
-            <p class="text-testimonial">"Desarrollado con HTML5, CSS3, JAVASCRIPT, PHP y con el motor
-                 de base de datos MYSQL, ICE SYSTEM será de gran ayuda para la gestión de los miembros
-                 de la iglesia Centro Evangelístico.".</p>
-            <p class="nombre-testimonial">IGLESIA CENTRO EVANGELÍSTICO / CERRO DE PASCO - 2021</p>
-    </section>  
-
-    
-        <div class="project" id="project">
-            
-            <div>
-                <img src="imagenes/📱 Iphone_mix_desing_inicio.png" alt="">
-            </div>
-
-            <div class="project-image">
-                <img src="imagenes/📱 Iphone_mix_desing.png" alt="">
-         
-            </div>
-            
-            <div class="project-description">
-                <p class="title" href="#">LIVIC CONCRETE</p>
-                <p style="text-align: justify;">Es una aplicación móvil para ingenieros civiles que cálcula el diseño de mezcla 
-                    en una determinada obra de construcción civil utilizando las normas del comité ACI 211 y RNE 
-                    con la opción de exportar un informe en formato PDF.</p>
-                     <button  onclick="window.open('https://github.com/alancarlossilvestre/Mix-Desing-UNDAC', '_blank')" href='' class="button is-secondary">Ver Código </button>
-                     <button  target="_blank" href="#" class="button">Ver Proyecto</button>
-            </div>
-        </div>
-        
-        <section class="contenedor-testimoniales">
-            <img width="65px" height="65px"  src="./imagenes/foco.svg" alt="icono-de-leonidas">
-            <p class="text-testimonial">"Desarollado en Java con el IDE Android Studio, Livic Concrete 
-                es una aplicación móvil para la Universidad Nacional Daniel Alcides Carrión,
-                me llevó 5 meses desarrollarlo. Está disponible para dispositivos android".</p>
-            <p class="nombre-testimonial">UNDAC / CERRO DE PASCO - 2020 - 2021</p>
-         </section>
-
-        <div class="project" id="project">
-            <div class="project-image">
-                <img src="imagenes/📱 Iphone X._meetoo.png" alt="">
-                
-            </div>
-            <div class="project-description">
-                <a class="title" href="#">MeToo</a>
-                <p>Es una plataforma móvil que integra personas con un bien en común, influeciando a 
-                    desarrollar proyectos sociales de alto impacto, "nosotros somos influenciadores de 
-                    nuestra propia vida pro ende, de un mundo mejor".</p>
-                     <button target="_blank" href="#" class="button is-secondary">Ver Código</button>
-                     <button target="_blank" href="#" class="button">Ver Proyecto</button>
-            </div>
-        </div>
-
-        <section class="contenedor-testimoniales">
-            <img width="65px" height="65px"  src="./imagenes/foco.svg" alt="icono-de-leonidas">
-            <p class="text-testimonial">"MeToo es parte de un proyecto que llegó a la final del 
-                torneo iberoamericano "TuApp 2019", fue considerado entre uno de los mejores 25
-                proyectos para hacerse una realidad .</p>
-            <p class="nombre-testimonial">EMILIANO ZAPATA - TABASCO - MÉXICO  /  Tu App 2019</p>
         </section>
-        
-       
-     
-    <form  id="form" action="" method="POST" class="form">
-        <div class="form-content">
-            <h2 class="title" >Hablemos</h2>   
 
-        <p>Si está interesado en trabajar conmigo en su próximo proyecto, 
-            no dude en ponerse en contacto conmigo.</p>
+        <section class="content-section" id="soluciones" aria-labelledby="solutions-title">
+            <div class="section-heading">
+                <p class="eyebrow">Cómo puedo ayudarte</p>
+                <h2 id="solutions-title">De tu idea a una <span class="gradient-text">solución tecnológica.</span></h2>
+                <p>Desarrollo web, aplicaciones móviles y sistemas para resolver necesidades concretas. Puedo acompañarte desde la definición del proyecto hasta su implementación y despliegue, o integrarme a tu equipo de tecnología.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card glass">
+                    <span class="service-number" aria-hidden="true">01 / WEB</span>
+                    <h3>Desarrollo web</h3>
+                    <p>Sitios web profesionales e interfaces que presentan tu negocio, comunican tus servicios y facilitan el contacto con tus clientes.</p>
+                    <p class="service-detail">Una presencia digital clara, adaptable a móvil y pensada para tus usuarios.</p>
+                    <a class="text-link service-link" href="#form" data-service="Desarrollo web">Conversemos sobre tu web <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="service-card glass">
+                    <span class="service-number" aria-hidden="true">02 / MÓVIL</span>
+                    <h3>Aplicaciones móviles</h3>
+                    <p>Aplicaciones para llevar servicios, herramientas y procesos al bolsillo de tus usuarios, apoyándome en mi experiencia con Android y Java.</p>
+                    <p class="service-detail">De una necesidad concreta a una experiencia móvil útil.</p>
+                    <a class="text-link service-link" href="#form" data-service="Aplicaciones móviles">Hablemos de tu aplicación <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="service-card glass">
+                    <span class="service-number" aria-hidden="true">03 / SISTEMAS</span>
+                    <h3>Sistemas y sistemas web</h3>
+                    <p>Soluciones a medida para gestionar información, organizar operaciones y digitalizar procesos de tu negocio o equipo.</p>
+                    <p class="service-detail">Herramientas adaptadas a cómo trabajas, no al revés.</p>
+                    <a class="text-link service-link" href="#form" data-service="Sistemas y sistemas web">Conversemos sobre tu sistema <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="service-card glass">
+                    <span class="service-number" aria-hidden="true">04 / CONSULTORÍA</span>
+                    <h3>Consultoría tecnológica</h3>
+                    <p>Análisis de necesidades, definición del alcance y orientación sobre herramientas, automatización y prácticas de entrega de software.</p>
+                    <p class="service-detail">Una ruta de mejora alineada con tu contexto y prioridades.</p>
+                    <a class="text-link service-link" href="#form" data-service="Consultoría tecnológica">Revisemos tu necesidad <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="service-card glass">
+                    <span class="service-number" aria-hidden="true">05 / AUTOMATIZAR</span>
+                    <h3>Automatización de procesos</h3>
+                    <p>Desarrollo de scripts y automatizaciones con Python, Shell y Ansible para simplificar tareas repetitivas y apoyar la operación de los equipos.</p>
+                    <p class="service-detail">Menos trabajo manual, procesos más consistentes.</p>
+                    <a class="text-link service-link" href="#form" data-service="Automatización de procesos">Identifiquemos qué automatizar <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="service-card glass">
+                    <span class="service-number" aria-hidden="true">06 / ENTREGAR</span>
+                    <h3>DevOps y despliegues</h3>
+                    <p>Diseño y mejora de pipelines CI/CD, preparación de despliegues y acompañamiento en prácticas DevOps y controles de seguridad durante la entrega.</p>
+                    <p class="service-detail">Conectar desarrollo y operación para entregar software.</p>
+                    <a class="text-link service-link" href="#form" data-service="DevOps y despliegues">Hablemos de tus despliegues <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+            <div class="audience-grid">
+                <article class="audience-card glass">
+                    <p class="eyebrow">Para equipos y reclutadores</p>
+                    <h3>Talento para tu equipo</h3>
+                    <p>Conoce mi trayectoria en el sector financiero y telecomunicaciones, mi experiencia técnica y mi formación. Podemos conversar sobre una oportunidad profesional.</p>
+                    <a class="text-link service-link" href="#form" data-service="Oportunidad profesional">Conversar sobre una oportunidad <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="audience-card glass">
+                    <p class="eyebrow">Para negocios y proyectos</p>
+                    <h3>Tecnología para tu necesidad</h3>
+                    <p>¿Necesitas una web, una aplicación o un sistema? Cuéntame el problema que quieres resolver y conversemos sobre una solución y su alcance.</p>
+                    <a class="text-link service-link" href="#form" data-service="Consulta general">Cuéntame tu proyecto <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+        </section>
 
-            <label for="form-name">
-                Nombre Completo:
-                <input required name="name" id="for-name" type="text" placeholder="ejemplo: Juan Rojas Zelada" name="" id="">
-            </label>
-       
+        <section class="content-section" id="formacion" aria-labelledby="education-title">
+            <div class="section-heading">
+                <p class="eyebrow">Formación y aprendizaje continuo</p>
+                <h2 id="education-title">Conocimiento que acompaña la <span class="gradient-text">práctica.</span></h2>
+                <p>Bachiller en Ingeniería de Sistemas y Computación por la Universidad Nacional Daniel Alcides Carrión, egresado en 2021. Mi formación continua se centra en cloud, automatización, ciberseguridad y trabajo ágil.</p>
+            </div>
+            <div class="credentials-grid">
+                <article class="credential-card glass">
+                    <p class="eyebrow">Google · Junio 2025</p>
+                    <h3>Certificado de Ciberseguridad de Google</h3>
+                    <a class="text-link" href="https://www.credly.com/badges/405d1ea5-d616-4b77-bb63-dd45ec288280/public_url" target="_blank" rel="noopener noreferrer">Ver credencial <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="credential-card glass">
+                    <p class="eyebrow">Amazon · Junio 2023</p>
+                    <h3>AWS Partner: AWS Cloud Practitioner Essentials</h3>
+                    <p>Formación en fundamentos de cloud.</p>
+                </article>
+                <article class="credential-card glass">
+                    <p class="eyebrow">OpenWebinars · Noviembre 2022</p>
+                    <h3>Carrera especialista en automatizaciones DevOps</h3>
+                    <p>Formación orientada a la automatización.</p>
+                </article>
+                <article class="credential-card glass">
+                    <p class="eyebrow">SCRUMstudy · Octubre 2022</p>
+                    <h3>Scrum Fundamentals Certified</h3>
+                    <a class="text-link" href="https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-AlanMiguelCarlosSilvestre.-946936.pdf" target="_blank" rel="noopener noreferrer">Ver certificado <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="credential-card glass">
+                    <p class="eyebrow">Google · Abril 2022</p>
+                    <h3>Cloud Computing</h3>
+                    <p>Formación en computación en la nube.</p>
+                </article>
+                <article class="credential-card glass">
+                    <p class="eyebrow">Formación complementaria</p>
+                    <h3>Herramientas para seguir creciendo</h3>
+                    <p>Cursos de SSH, despliegue con Ansible, Git y GitHub, y Power BI Desktop.</p>
+                </article>
+            </div>
+            <div class="background-card glass">
+                <div class="panel-heading">
+                    <p class="eyebrow">Comunidad y reconocimiento</p>
+                    <h3>Compartir conocimiento también es parte del camino</h3>
+                </div>
+                <div class="recognition-grid">
+                    <div>
+                        <h4>Segundo lugar · Desafío Pasco 2022</h4>
+                        <p>Concurso de emprendimiento organizado por UTEC.</p>
+                    </div>
+                    <div>
+                        <h4>Expositor y organizador · Diciembre 2019</h4>
+                        <p>Conferencia “Protégete de los ciberdelincuentes”, organizada por Microsoft User Group Pasco en el Colegio de Ingenieros de Cerro de Pasco.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <label for="form-email">
-            Correo Electrónico:
-            <input required name="email" id="for-name" type="email" placeholder="ejemplo: Juan@ejemplo.com" name="" id="">
-        </label>
-        
+        <section class="contact-section" id="form" aria-labelledby="contact-title">
+            <div class="contact-panel glass">
+                <div class="contact-description">
+                    <p class="eyebrow">Conversemos</p>
+                    <h2 id="contact-title">Tu próxima necesidad, una nueva <span class="gradient-text">solución.</span></h2>
+                    <p>Ya sea una oportunidad para integrarme a tu equipo o un proyecto web, móvil o de sistemas para tu negocio, conversemos sobre cómo puedo aportar.</p>
+                    <a class="contact-email" href="mailto:alancarlossilvestre1@gmail.com">alancarlossilvestre1@gmail.com <span aria-hidden="true">↗</span></a>
+                    <a class="contact-phone text-link" href="tel:+51983260408">+51 983 260 408</a>
+                    <p class="contact-note">También podemos conectar en LinkedIn o GitHub.</p>
+                    <div class="social" aria-label="Redes profesionales">
+                        <a class="button-icon" href="https://www.linkedin.com/in/alan-miguel-carlos-silvestre-6936651bb/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Alan (abre en otra pestaña)"><span class="linkedin-mark" aria-hidden="true">in</span></a>
+                        <a class="button-icon" href="https://github.com/alancarlossilvestre" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Alan (abre en otra pestaña)"><img src="./icons/icon-github.svg" width="22" height="22" alt=""></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" action="mailto:alancarlossilvestre1@gmail.com" method="post" enctype="text/plain" aria-describedby="form-help">
+                    <div class="form-field">
+                        <label for="form-name">Nombre completo</label>
+                        <input required name="name" id="form-name" type="text" autocomplete="name" placeholder="Tu nombre">
+                    </div>
+                    <div class="form-field">
+                        <label for="form-email">Correo electrónico</label>
+                        <input required name="email" id="form-email" type="email" autocomplete="email" placeholder="tu@correo.com">
+                    </div>
+                    <div class="form-field">
+                        <label for="form-service">¿Sobre qué te gustaría conversar?</label>
+                        <select name="service" id="form-service">
+                            <option>Consulta general</option>
+                            <option>Oportunidad profesional</option>
+                            <option>Desarrollo web</option>
+                            <option>Aplicaciones móviles</option>
+                            <option>Sistemas y sistemas web</option>
+                            <option>Consultoría tecnológica</option>
+                            <option>Automatización de procesos</option>
+                            <option>DevOps y despliegues</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="form-message">Mensaje</label>
+                        <textarea required name="message" id="form-message" rows="5" placeholder="Cuéntame sobre tu necesidad o proyecto"></textarea>
+                    </div>
+                    <p class="form-help" id="form-help">Este formulario prepara el mensaje en tu aplicación de correo. No lo envía automáticamente.</p>
+                    <button class="button" type="submit">Preparar correo <span aria-hidden="true">↗</span></button>
+                    <p class="form-status" id="form-status" role="status"></p>
+                    <a class="text-link" id="prepared-email" href="mailto:alancarlossilvestre1@gmail.com" hidden>Abrir correo preparado</a>
+                </form>
+            </div>
+        </section>
+    </main>
 
-        <label for="form-menssage">
-            Mensaje:
-            <textarea required name="message" placeholder="Mensaje" id="form-message" cols="30" rows="6"></textarea>
-        </label>
-        </textarea>
-
-        <button href="" class="button"  type="submit">Enviar mensaje</button>
+    <footer class="footer wrapper">
+        <a class="logo" href="#main">Alan Carlos<span class="logo-dot" aria-hidden="true">.</span></a>
+        <div class="footer-copy">
+            <p>DevSecOps · Automatización · Soluciones tecnológicas</p>
+            <p>© 2026 Alan Carlos Silvestre.</p>
         </div>
-        
-    </form>
-
-    <a href="mailto:alancarlossilvestre1@gmail.com" id="trucazo">mail</a>
-
-    <footer class="footer" id="contact">
-        <div class="footer-content">
-            <div class="footer-ac">
-               <h1>Alan Carlos</h1>
-            </div>
-            
-            <div class="social">
-                <a class="button-icon" href="tel:+51983260"><img src="./icons/icon-phone.svg" alt=""></a>
-                <a class="button-icon" href="#form"><img src="./icons/icon-important_mail.svg" alt=""></a>
-                <a class="button-icon" href="https://www.instagram.com/alan.carlos.silvestre/" target="_blank"><img src="./icons/icon-instagram.svg" alt=""></a>
-                <a class="button-icon" href="https://github.com/alancarlossilvestre" target="_blank" ><img src="./icons/icon-github.svg" alt=""></a>
-            </div>
-        
-            <div class="footer-copyrith">
-                <p>
-                    Hecho con el ❤ por Alan.
-                </p>
-                <p>
-                    Copyright 2021 - Todos los derechos reservados.
-                </p>
-            </div>
-        </div>
-      
-    </footer > 
-</div>
-    <script>
-        const $form = document.querySelector('#form')
-        const $buttonMailto = document.querySelector('#trucazo')
-        $form.addEventListener('submit', handleSubmit)
-
-        function handleSubmit(event){  
-            event.preventDefault()
-            const form = new FormData(this)
-            console.log(form.get('name'))
-            $buttonMailto.setAttribute('href', `mailto:alancarlossilvestre1@gmail.com?subject=${form.get('name')} - ${form.get('email')}&body= ${form.get('message')}`)
-            $buttonMailto.click()
-        }
-    </script>
-    
+        <a class="text-link" href="#main">Volver arriba <span aria-hidden="true">↑</span></a>
+    </footer>
 </body>
-
 </html>
