@@ -1,53 +1,58 @@
-# Perfil profesional
+# Alan Carlos Silvestre
 
-Web profesional de Alan Carlos Silvestre, enfocada en su perfil, experiencia, formación y servicios de soluciones tecnológicas y consultoría. Sitio estático compatible con GitHub Pages, construido con HTML, CSS y JavaScript, sin dependencias de compilación.
+**DevSecOps Engineer · Desarrollo de software · Soluciones tecnológicas**
 
-## Información profesional
+Soy bachiller en Ingeniería de Sistemas y Computación por la Universidad Nacional Daniel Alcides Carrión. Mi experiencia combina desarrollo de software, automatización, cloud y seguridad en la entrega de aplicaciones, con trayectoria en los sectores financiero y de telecomunicaciones.
 
-La información se tomó de `curriculum/CV_ Alan_Miguel_Carlos_Silvestre.pdf`. La web prioriza la experiencia en Financiera Oh!, BCP, Entel Perú y GOREPA Pasco, y conserva una síntesis de los primeros proyectos de desarrollo móvil.
+Desarrollo soluciones web, aplicaciones móviles y sistemas a medida. También brindo consultoría tecnológica para definir necesidades, orientar proyectos y mejorar procesos de desarrollo y despliegue.
 
-El período en BCP se corrigió a **enero de 2023 – julio de 2024**, según confirmación del titular. El PDF original no se modifica y todavía indica “Actualidad” para ese puesto.
+[Conoce mi perfil profesional](https://alancarlossilvestre.github.io/) · [Descargar mi CV](curriculum/CV_%20Alan_Miguel_Carlos_Silvestre.pdf)
 
-Los servicios priorizan desarrollo web, aplicaciones móviles y sistemas/sistemas web a medida, además de consultoría tecnológica, automatización y DevOps. Se presentan como formas de colaboración, sin atribuir clientes, resultados o experiencia de consultoría no documentados. Hay caminos de contacto diferenciados para reclutadores y para clientes con proyectos. La formación AWS Partner se identifica con su nombre original, no como una certificación AWS Certified.
+## Experiencia profesional
 
-Se incluyen formación y credenciales del CV, así como los enlaces profesionales y el teléfono completo. No se reproduce la fecha de nacimiento en el contenido de la página ni se utiliza un testimonio del portafolio anterior; el PDF descargable conserva su contenido original.
+| Organización | Cargo | Período |
+| --- | --- | --- |
+| Financiera Oh! | DevSecOps Engineer | Junio de 2024 – Actualidad |
+| BCP | AgileOps | Enero de 2023 – Julio de 2024 |
+| Entel Perú | Practicante preprofesional de Cloud & Automation | Diciembre de 2021 – Diciembre de 2022 |
+| GOREPA Pasco | Ejecutor de proyecto | Mayo de 2021 – Diciembre de 2021 |
 
-## Diseño
+He trabajado en pipelines automatizados, despliegues a certificación y producción, automatización de procesos y prácticas DevOps. Mis primeros proyectos incluyen aplicaciones Android como Diseño de Mezcla · Living Concrete, Essence y MeeToo.
 
-Estilo glassmorphism oscuro con acentos violetas y cian, basado en los principios de [Glassmorphism: Definition and Best Practices, de Nielsen Norman Group](https://www.nngroup.com/articles/glassmorphism/). El fondo incluye esferas de color que se perciben detrás de paneles translúcidos; el desenfoque, los reflejos y los bordes iluminados dan profundidad sin reducir la opacidad del texto.
+## Soluciones tecnológicas
 
-Los paneles de lectura y la navegación tienen más protección de contraste que los elementos decorativos. Incluye fondos sólidos para navegadores sin `backdrop-filter` y para las preferencias del sistema `prefers-reduced-transparency: reduce` o `prefers-contrast: more`, además de navegación móvil, foco visible y respeto por el movimiento reducido.
+- **Desarrollo web:** sitios profesionales e interfaces para comunicar servicios y conectar con clientes.
+- **Aplicaciones móviles:** soluciones Android para llevar herramientas, servicios y procesos a los usuarios.
+- **Sistemas y sistemas web:** herramientas a medida para gestionar información y digitalizar operaciones.
+- **Consultoría tecnológica:** análisis de necesidades, definición de alcance y orientación técnica.
+- **Automatización de procesos:** scripts y automatizaciones para simplificar tareas repetitivas.
+- **DevOps y despliegues:** diseño y mejora de pipelines CI/CD y prácticas de entrega de software.
 
-El diseño actual utiliza `css/estilos.css` y `css/normalize.css`. Los demás estilos del diseño anterior se conservan, pero no se cargan.
+Puedo acompañar un proyecto desde la definición de sus necesidades hasta su implementación y despliegue, o integrarme a un equipo de tecnología.
 
-## Vista local
+## Tecnologías
 
-Desde la carpeta del proyecto:
+**DevOps y automatización:** Azure DevOps, Docker, Jenkins, Ansible, Linux, Shell, Git y Bitbucket.
 
-```powershell
-python -m http.server 8000 --bind 127.0.0.1
-```
+**Cloud y plataformas:** Azure, Huawei Cloud, Kubernetes, Apigee GCP y SonarCloud.
 
-Abrir `http://127.0.0.1:8000` en el navegador. No se necesita instalar paquetes.
+**Desarrollo y colaboración:** Java, Python, SQL / PL-SQL, Android Studio, Scrum, Jira y Confluence.
 
-## Presentación sin fotografía
+## Formación
 
-La sección de presentación conserva la composición propia hecha con HTML y CSS: monograma AC, órbitas, etiquetas de DevOps, cloud y seguridad, y una tarjeta de código. No descarga imágenes adicionales ni utiliza una foto de otra persona. Se edita en el elemento con la clase `hero-visual` de `index.html` y sus estilos en `css/estilos.css`.
+- Bachiller en Ingeniería de Sistemas y Computación, Universidad Nacional Daniel Alcides Carrión; egresado en 2021.
+- [Certificado de Ciberseguridad de Google](https://www.credly.com/badges/405d1ea5-d616-4b77-bb63-dd45ec288280/public_url).
+- Scrum Fundamentals Certified, SCRUMstudy.
+- Formación AWS Partner: AWS Cloud Practitioner Essentials.
+- Carrera especialista en automatizaciones DevOps, OpenWebinars.
+- Formación en Cloud Computing, Google.
 
-La fotografía original `imagenes/1.png` se conserva en el repositorio, pero ya no se muestra.
+## Contacto profesional
 
-## Animaciones
+Para oportunidades profesionales, consultoría o proyectos tecnológicos:
 
-DevOps, Cloud y Seguridad recorren una órbita elíptica de 32 segundos alrededor del monograma; las etiquetas permanecen orientadas para poder leerlas. Un botón en la tarjeta permite pausar y reanudar. La órbita también se pausa cuando queda fuera de la pantalla o la pestaña está oculta.
+- **Correo:** [alancarlossilvestre1@gmail.com](mailto:alancarlossilvestre1@gmail.com)
+- **Teléfono:** [+51 983 260 408](tel:+51983260408)
+- **LinkedIn:** [Alan Miguel Carlos Silvestre](https://www.linkedin.com/in/alan-miguel-carlos-silvestre-6936651bb/)
+- **GitHub:** [alancarlossilvestre](https://github.com/alancarlossilvestre)
 
-Las secciones entran una sola vez con un desplazamiento de 12 píxeles y una transición de 480 milisegundos, con un pequeño escalonado entre tarjetas. No hay movimiento continuo en el resto del contenido. Se respetan `prefers-reduced-motion`, los cambios de preferencia durante la visita y el foco del teclado.
-
-El contenido siempre es visible sin JavaScript, `IntersectionObserver` o Web Animations. La órbita queda estática si falta soporte para `offset-path` o se ha solicitado movimiento reducido.
-
-## Contacto
-
-Los enlaces de cada servicio y de las tarjetas para reclutadores y clientes llevan al formulario con el motivo de la consulta preseleccionado. El formulario prepara un enlace `mailto:` con el tema, nombre, correo y mensaje codificados. Abre la aplicación de correo del visitante; **no envía mensajes automáticamente ni utiliza un servidor**. También muestra un enlace para volver a abrir el correo preparado y la dirección de contacto. Al editar los datos se retira el enlace preparado anterior para no reutilizar un mensaje desactualizado.
-
-El salto al contacto conserva el historial de navegación y coloca el foco en el motivo de la consulta, que puede cambiarse antes de preparar el correo.
-
-LinkedIn, el correo y el teléfono se basan en el CV. Los enlaces externos se abren con `target="_blank"` y `rel="noopener noreferrer"`.
