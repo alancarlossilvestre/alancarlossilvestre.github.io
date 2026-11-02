@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Alan Carlos Silvestre: experiencia en DevSecOps y soluciones tecnológicas. Desarrollo web, aplicaciones móviles, sistemas a medida y consultoría para equipos y negocios.">
-    <meta name="theme-color" content="#0b1020">
+    <meta name="theme-color" content="#0a0a12">
     <title>Alan Carlos Silvestre | DevSecOps y soluciones tecnológicas</title>
     <link rel="icon" href="./imagenes/letra-a-dentro-de-un-circulo.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <script src="./js/main.js" defer></script>
+    <script src="./js/effects.js" defer></script>
 </head>
 <body>
-    <div class="ambient-background" aria-hidden="true">
-        <span class="ambient-orb ambient-orb--violet"></span>
-        <span class="ambient-orb ambient-orb--cyan"></span>
-        <span class="ambient-orb ambient-orb--blue"></span>
-        <span class="ambient-ring"></span>
+    <div class="boot" id="boot" aria-hidden="true">
+        <pre class="boot-log" id="boot-log"></pre>
     </div>
+    <div class="pipeline-progress" aria-hidden="true"><span id="scroll-bar"></span></div>
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+    <div class="grid-bg" aria-hidden="true"></div>
     <a class="skip-link" href="#main">Saltar al contenido</a>
 
     <header class="site-header wrapper">
@@ -45,7 +46,7 @@
         <section class="hero hero--professional" aria-labelledby="hero-title">
             <div class="hero-description">
                 <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> DevSecOps Engineer</p>
-                <h1 id="hero-title">Alan Carlos <span class="gradient-text">Silvestre.</span></h1>
+                <h1 id="hero-title" class="glitch">Alan Carlos <span class="gradient-text">Silvestre<span class="caret" aria-hidden="true">_</span></span></h1>
                 <p class="hero-intro">DevSecOps Engineer y desarrollador. Creo soluciones web, aplicaciones móviles y sistemas a medida, combinando desarrollo, automatización y cloud.</p>
                 <div class="button-group">
                     <a class="button" href="#experiencia">Mi experiencia <span aria-hidden="true">↗</span></a>
@@ -73,37 +74,37 @@
             <figure class="hero-visual glass">
                 <div class="visual-header">
                     <span class="window-controls" aria-hidden="true"><i></i><i></i><i></i></span>
-                    <span>Tecnología con propósito.</span>
-                    <span class="visual-code-mark" aria-hidden="true">&lt;/&gt;</span>
-                    <button class="orbit-toggle" type="button" aria-pressed="false" aria-label="Pausar animación orbital" title="Pausar animación orbital" hidden>
+                    <span class="visual-title">alan@devsecops:~/portfolio</span>
+                    <button class="orbit-toggle" type="button" aria-pressed="false" aria-label="Pausar animaciones" title="Pausar animaciones">
                         <svg class="orbit-pause-icon" width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 3h3v10H4zm5 0h3v10H9z"></path></svg>
                         <svg class="orbit-play-icon" width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M5 2.5 13 8l-8 5.5z"></path></svg>
                     </button>
                 </div>
-                <div class="creative-scene" aria-hidden="true">
-                    <div class="creative-orbit creative-orbit--outer"></div>
-                    <div class="creative-orbit creative-orbit--inner"></div>
-                    <div class="creative-orbit creative-orbit--path"></div>
-                    <div class="creative-core">AC<span>.</span></div>
-                    <span class="floating-label floating-label--devops"><span>&lt;/&gt;</span> DevOps</span>
-                    <span class="floating-label floating-label--cloud"><span>{ }</span> Cloud</span>
-                    <span class="floating-label floating-label--security"><span>+</span> Seguridad</span>
-                    <span class="scene-spark scene-spark--one"></span>
-                    <span class="scene-spark scene-spark--two"></span>
+                <div class="visual-code" id="terminal">
+                    <p><span class="code-prompt">$</span> whoami</p>
+                    <p class="code-out">Alan Carlos · DevSecOps Engineer</p>
+                    <p><span class="code-prompt">$</span> ./deploy.sh --env=prod</p>
+                    <p class="code-out">▸ pipeline iniciado...</p>
                 </div>
-                <div class="visual-code">
-                    <p><span class="code-keyword">const</span> perfil = {</p>
-                    <p class="code-line">valor: <span class="code-string">"soluciones"</span>,</p>
-                    <p class="code-line">foco: <span class="code-string">"automatización"</span></p>
-                    <p>};</p>
-                </div>
-                <figcaption class="visual-caption glass">
-                    <span class="caption-icon" aria-hidden="true">&lt;/&gt;</span>
-                    <div><strong>Alan Carlos Silvestre</strong><span>DevSecOps Engineer</span></div>
+                <ol class="pipeline" aria-label="Ejemplo de pipeline CI/CD">
+                    <li style="--i:0"><span class="stage-icon" aria-hidden="true"></span>build</li>
+                    <li style="--i:1"><span class="stage-icon" aria-hidden="true"></span>test</li>
+                    <li style="--i:2"><span class="stage-icon" aria-hidden="true"></span>sonar scan</li>
+                    <li style="--i:3"><span class="stage-icon" aria-hidden="true"></span>deploy</li>
+                </ol>
+                <figcaption class="visual-caption">
                     <span class="caption-dot" aria-hidden="true"></span>
+                    <div><strong>main</strong> · todos los checks pasaron <span class="visual-badge">LGTM 🚀</span></div>
                 </figcaption>
             </figure>
         </section>
+
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>Azure DevOps</span><span>Docker</span><span>Kubernetes</span><span>Jenkins</span><span>Ansible</span><span>Linux</span><span>Python</span><span>Java</span><span>SonarCloud</span><span>Git</span><span>Shell</span><span>CI/CD</span>
+                <span>Azure DevOps</span><span>Docker</span><span>Kubernetes</span><span>Jenkins</span><span>Ansible</span><span>Linux</span><span>Python</span><span>Java</span><span>SonarCloud</span><span>Git</span><span>Shell</span><span>CI/CD</span>
+            </div>
+        </div>
 
         <section class="content-section" id="perfil" aria-labelledby="profile-title">
             <div class="section-heading">
